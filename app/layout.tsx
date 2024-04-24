@@ -4,26 +4,26 @@ import "./globals.css";
 import Nav from "./components/Home/Nav";
 
 const font = Marcellus({
-  weight:['400'],
-  subsets: ['latin']
+    weight: ['400'],
+    subsets: ['latin']
 })
 
 export const metadata: Metadata = {
-  title: "Morais & Ribeiro",
-  description: "Advocacia e Consultoria Jurídica",
+    title: "Morais & Ribeiro - Advocacia e Consultoria Jurídica",
+    description: "Advocacia e Consultoria Jurídica",
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={font.className}>
-        <Nav />
-        {children}
-        </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body className={font.className}>
+                <Nav />
+                {children}
+            </body>
+        </html>
+    );
 }
