@@ -22,7 +22,10 @@ export default function RootLayout({
         <html lang="en">
             <body className={font.className}>
                 <Nav />
-                {children}
+                <div className="pt-[10vh]">
+
+                    {children}
+                </div>
             </body>
         </html>
     );
