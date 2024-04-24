@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col'>
                     <h3 className='text-[#CC926A] text-xl mb-4 '>Nosso endereço</h3>
-                    <span className='text-zinc-300 w-64'><Link className='hover:text-[#cca185] transition duration-500 hover:duration-500' href={''}>Rua Antônio Aleixo da Silva, 1880  Jardim Satélite, São José dos Campos - SP, CEP 12231-650</Link></span>
+                    <span className='text-zinc-300 w-64 antialiased'><Link className='hover:text-[#cca185] transition duration-500 hover:duration-500' href={''}>Rua Antônio Aleixo da Silva, 1880  Jardim Satélite, São José dos Campos - SP, CEP 12231-650</Link></span>
                 </div>
                 <div className='flex flex-col'>
                     <h3 className='text-[#CC926A] text-xl mb-4'>Entre em contato</h3>
