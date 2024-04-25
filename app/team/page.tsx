@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import React from 'react'
+import SectionTitle from '../components/SectionTitle/SectionTitle';
 
 export const metadata: Metadata = {
     title: "Nosso time - Morais & Ribeiro",
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 
 const Team = () => {
     return (
-        <div>Team</div>
+        <SectionTitle title='Nossos Profissionais' subtitle='Acreditamos no poder da nossa equipe e sabemos que nada se constrói sozinho.' />
     )
 }
 
