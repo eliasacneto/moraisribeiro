@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Marcellus } from "next/font/google";
 import "./globals.css";
-import Nav from "./components/Home/Nav";
+import Nav from "./components/Navbar/Nav";
 
 const font = Marcellus({
   weight:['400'],
