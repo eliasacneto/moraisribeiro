@@ -41,7 +41,7 @@ const Nav = () => {
                         <li className='text-zinc-300'>
                             <Link
                                 href="/contact"
-                                className="bg-[#d68e5d] text-white py-3 px-10 rounded-tl-[15px] rounded-br-[15px] px-10 py-3 hover:bg-[#c47642] text-bold transition duration-500 hover:duration-500"
+                                className="bg-[#d68e5d] text-white py-3 px-10 rounded-tl-[15px] rounded-br-[15px] hover:bg-[#c47642] text-bold transition duration-500 hover:duration-500"
                             >
                                 Contato
                             </Link>
