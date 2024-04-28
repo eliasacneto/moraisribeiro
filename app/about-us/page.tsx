@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const AboutUs = () => {
     return (
-        <SectionTitle title='Sobre nós' subtitle='Uma história de sucesso e confiança' />
+        <SectionTitle title='Sobre nós' subtitle='Uma história de sucesso e confiança' /> 
     )
 }
 
