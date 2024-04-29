@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Marcellus } from "next/font/google";
 import "./globals.css";
-import Nav from "./components/Home/Nav";
+import Nav from "./components/Navbar/Nav";
 
 const font = Marcellus({
     weight: ['400'],
@@ -22,7 +22,13 @@ export default function RootLayout({
         <html lang="en">
             <body className={font.className}>
                 <Nav />
-                {children}
+
+                <div className="pt-[10vh]">
+                    <div >
+                        {children}
+
+                    </div>
+                </div>
             </body>
         </html>
     );

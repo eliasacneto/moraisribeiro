@@ -9,7 +9,7 @@ import { faEnvelope, faMap } from '@fortawesome/free-regular-svg-icons';
 const Footer = () => {
     return (
 
-        <div className='flex flex-col sm:flex-row w-full justify-around bg-black px-4 sm:px-16 py-12'>
+        <div className='flex flex-col sm:flex-row w-full justify-around bg-slate-950 px-4 sm:px-16 py-12'>
             <Image src={Logo} alt='logo' className='w-4/5 mb-10 sm:w-64' />
             <div className='flex flex-col gap-8 sm:flex-row sm:justify-around sm:gap-12 pr-4 sm:pr-8'>
                 <div>

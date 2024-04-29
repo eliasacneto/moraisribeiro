@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import React from 'react'
+import SectionTitle from '../components/SectionTitle/SectionTitle';
 
 export const metadata: Metadata = {
     title: "Sobre nós - Morais & Ribeiro",
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 
 const AboutUs = () => {
     return (
-        <div>AboutUs</div>
+        <SectionTitle title='Sobre nós' subtitle='Uma história de sucesso e confiança' /> 
     )
 }
 
