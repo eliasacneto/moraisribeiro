@@ -47,7 +47,7 @@ const AboutUs = () => {
                     />
                 </div>
             </div>
-            <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 mb-16 sm:mb-16">
+            <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 mb-16 sm:mb-32">
                 <div className="md:w-1/2 mb-8 md:mb-0">
                     <Image 
                         src={aboutUsPhoto} 
