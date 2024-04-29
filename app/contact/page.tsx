@@ -4,6 +4,9 @@ import Footer from '../components/Footer/Footer';
 import { Marcellus } from 'next/font/google';
 import SectionTitle from '../components/SectionTitle/SectionTitle';
 import ButtonBrown from '../components/ButtonBrown/ButtonBrown';
+import CardIcon from '../components/CardIcon/CardIcon';
+import PinLocation from '../../public/images/location.svg'
+import WhatsApp from '../../public/images/whatsapp.svg'
 
 const font = Marcellus({
     weight: ['400'],
@@ -20,36 +23,42 @@ const Contact = () => {
     return (
         <>
             <SectionTitle title='Entre em contato' subtitle='Preencha o formulário abaixo' />
-            {/* <Footer /> */}
-            {/* <div>
-                <h3>Localização</h3>
-                <p>Rua Antônio Aleixo da Silva, 1880  Jardim Satélite, São José dos Campos - SP
-                    CEP 12231-650</p>
-            </div> */}
-            <div className='flex flex-row justify-around'>
 
-                <div className='w-2/5'>
-                    Área dos cards
+            <div className='flex flex-row justify-evenly items-center  my-8'>
+                <div className='flex w-2/5 gap-10'>
+                    <CardIcon
+                        title='Localização'
+                        text='Rua Antônio Aleixo da Silva, 1880  Jardim Satélite, São José dos Campos - SP CEP 12231-650'
+                        image={PinLocation} alt='Pin Location' border="border-[#b8967e42]"
+                        rounded="rounded-tr-[3rem] rounded-bl-[3rem]"
+                    />
+                    <CardIcon
+                        title='WhatsApp e E-mail'
+                        text='(12) 9 9160-4267 moraisribeiroadvjur@gmail.com'
+                        image={PinLocation} alt='Pin Location' border="border-[#b8967e42]"
+                        rounded="rounded-tr-[3rem] rounded-bl-[3rem]"
+                    />
+
                 </div>
 
-                <div className='bg-gray-50 p-10 mt-24' >
+                <div className='bg-gray-50 p-10  rounded-3xl' >
                     <h1 className='text-3xl'>Entre em contato</h1>
                     <p className=' mt-3 mb-9'><span className='text-rose-500'>*</span>Campos obrigatórios</p>
 
                     <form className='flex flex-col w-[640px] '>
                         <label>Nome completo<span className='text-rose-500'>*</span></label>
-                        <input className='border-2 p-1  rounded' type='text' placeholder='Ex.: João da Silva' />
+                        <input className='border p-2.5 rounded-lg' type='text' placeholder='Ex.: João da Silva' />
 
                         <div className='flex flex-row justify-between gap-4 mt-3'>
                             <div className='flex flex-col rounded w-full'>
 
                                 <label> Email<span className='text-rose-500'>*</span></label>
-                                <input className='border-2 p-1 rounded w-full' type='email' />
+                                <input className='border p-2.5 rounded-lg w-full' type='email' placeholder='email@email.com' />
                             </div>
                             <div className=' flex flex-col rounded w-full'>
 
                                 <label> WhatsApp<span className='text-rose-500'>*</span></label>
-                                <input className='border-2 p-1 rounded font-sans' type='text' placeholder='(00) 0 0000-0000' />
+                                <input className='border p-2.5 rounded-lg font-sans' type='text' placeholder='(00) 0 0000-0000' />
                             </div>
                         </div>
                         <div className='flex flex-row justify-between gap-4 mt-3'>
@@ -94,6 +103,7 @@ const Contact = () => {
                     </form >
                 </div >
             </div >
+            <Footer />
         </>
     )
 }
