@@ -13,10 +13,10 @@ const ArticleView = ({ category, image, author, description }: Props) => {
   return (
     <div className='p-[3rem]'>
       <div className='flex flex-col md:flex-row items-center md:space-x-4'>
-        <div className='md:w-1/2'>
+        <div className='md:w-1/1'>
           <Image src={image} alt={category} />
         </div>
-        <div className='md:w-1/2 md:pl-4'>
+        <div className='md:w-[80%] md:pl-8'>
           <div className='space-y-2 text-center md:text-left'>
             <h1 className='text-[30px] text-[#21243D]'>{category}</h1>
             <p className='text-[18px] text-[#e07a4e]'>{author}</p>

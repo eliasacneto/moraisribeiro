@@ -21,14 +21,13 @@ const TeamDetails = ({
   return (
     <div className="p-[3rem]">
       <div className="flex flex-col md:flex-row items-center md:space-x-4">
-        <div className="md:w-1/2">
+        <div className="md:w-1/1">
           <Image src={image} alt={name} />
         </div>
-        <div className="md:w-1/2 md:pl-4">
+        <div className="md:w-[80%] md:pl-8">
           <div className="space-y-2 text-center md:text-left">
             <h1 className="text-[30px] text-[#21243D]">{name}</h1>
-            <p className="text-[15px] text-[#8B94A1]">{mainDescription}</p>
-            <p className="text-[15px] text-black">{social}</p>
+            <p className="text-[15px] text-justify text-[#8B94A1]">{mainDescription}</p>
             <p className="text-[15px] text-black">{toLink}</p>
             <div className="flex justify-center md:justify-start items-center text-[#CC926A] gap-[0.6rem]">
               {social.includes("linkedin") && (
