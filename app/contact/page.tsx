@@ -31,12 +31,49 @@ const Contact = () => {
                     jdsfnk
                 </div>
 
-                <div >
+                <div className='bg-gray-50' >
+                    <h1 className='text-3xl'>Entre em contato</h1>
+                    <p><span className='text-rose-500'>*</span>Campos obrigatórios</p>
                     <form className='flex flex-col w-[640px]'>
                         <label>Nome completo<span className='text-rose-500'>*</span></label>
-                        <input className='border-2 border-rose-500 rounded' type='text' placeholder='Ex.: João da Silva' />
-                        <label> Email<span className='text-rose-500'>*</span></label>
-                        <input type='email' />
+                        <input className='border-2 p-1  rounded' type='text' placeholder='Ex.: João da Silva' />
+
+                        <div className='flex flex-row justify-between gap-1'>
+                            <div className='flex flex-col rounded w-full'>
+
+                                <label> Email<span className='text-rose-500'>*</span></label>
+                                <input className='border-2 p-1 border-rose-500 rounded w-full' type='email' />
+                            </div>
+                            <div className=' flex flex-col rounded w-full'>
+
+                                <label> WhatsApp<span className='text-rose-500'>*</span></label>
+                                <input className='border-2 p-1 border-rose-500 rounded' type='text' />
+                            </div>
+                        </div>
+                        <div className='flex flex-row justify-between gap-1'>
+                            <div className='flex flex-col rounded w-full'>
+
+                                <label> Área de interesse<span className='text-rose-500'>*</span></label>
+                                <select id="area" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700">
+                                    <option selected>Escolha uma área</option>
+                                    <option value="area01">Área 01</option>
+                                    <option value="area02">Área 02</option>
+                                    <option value="area03">Área 03</option>
+                                    <option value="area04">Área 04</option>
+                                </select>
+                            </div>
+                            <div className=' flex flex-col rounded w-full'>
+
+                                <label> Como nos conheceu?<span className='text-rose-500'>*</span></label>
+                                <select id="area" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700">
+                                    <option selected>Selecione uma opção</option>
+                                    <option value="area01">Área 01</option>
+                                    <option value="area02">Área 02</option>
+                                    <option value="area03">Área 03</option>
+                                    <option value="area04">Área 04</option>
+                                </select>
+                            </div>
+                        </div>
 
                     </form>
                 </div>
