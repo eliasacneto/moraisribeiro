@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import React from 'react'
 import SectionTitle from '../components/SectionTitle/SectionTitle';
-import AboutUsCard from '../components/AboutUsCard/AboutUsCard';
+import CardIcon from '../components/CardIcon/CardIcon';
 import targetIcon from '../../public/images/targetIcon.svg'
 import eyeIcon from '../../public/images/eyeIcon.svg'
 import trophyIcon from '../../public/images/trophyIcon.svg'
@@ -21,7 +21,7 @@ const AboutUs = () => {
             <SectionTitle title='Sobre nós' subtitle='Uma história de sucesso e confiança' />
             <div className="flex justify-center">
                 <div className="mt-20 sm:my-24 mb-20 px-4 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <AboutUsCard 
+                    <CardIcon 
                         image={targetIcon} 
                         alt={"Ícone de alvo"}
                         title={"Missão"} 
@@ -29,7 +29,7 @@ const AboutUs = () => {
                         border="border-[#b8967e42]"
                         rounded="rounded-tr-[30px] rounded-bl-[30px]"
                     />
-                    <AboutUsCard 
+                    <CardIcon 
                         image={eyeIcon} 
                         alt={"Ícone de alvo"}
                         title={"Visão"} 
@@ -37,7 +37,7 @@ const AboutUs = () => {
                         border="border-[#B8967E]"
                         rounded="rounded-tl-[30px] rounded-br-[30px]"
                     />
-                    <AboutUsCard 
+                    <CardIcon
                         image={trophyIcon} 
                         alt={"Ícone de alvo"}
                         title={"Valores"} 

@@ -10,7 +10,7 @@ interface CardProps {
     rounded?: string 
 }
 
-const AboutUsCard = ({image, alt, title, text, border, rounded}: CardProps) => {
+const CardIcon = ({image, alt, title, text, border, rounded}: CardProps) => {
   return (
     <div className={`flex flex-col items-center w-[21.875rem] h-[23.75rem] border overflow-hidden px-4 ${rounded} ${border}`}>
         <Image 
@@ -26,4 +26,4 @@ const AboutUsCard = ({image, alt, title, text, border, rounded}: CardProps) => {
   )
 }
 
-export default AboutUsCard
+export default CardIcon
