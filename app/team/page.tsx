@@ -30,6 +30,8 @@ const Team = () => {
             }
             toLink="Redes sociais:"
             social={["linkedin", "instagram"]}
+            linkedinLink={"https://www.linkedin.com/in/nikollymorais/"}
+            instagramLink={"https://www.instagram.com/nikollymoraisadv/"}
           />
           <hr />
           <TeamDetails
@@ -40,6 +42,8 @@ const Team = () => {
             }
             toLink="Redes sociais:"
             social={["linkedin", "instagram"]}
+            linkedinLink={"https://www.linkedin.com/in/joaopedrorrmoliveira/"}
+            instagramLink={"https://www.instagram.com/joaorezenderibeiro/"}
           />
           <hr />
           <TeamDetails
@@ -50,6 +54,10 @@ const Team = () => {
             }
             toLink="Redes sociais:"
             social={["linkedin", "instagram"]}
+            linkedinLink={
+              "https://www.linkedin.com/in/gustavo-santos-ribeiro-31b652196/"
+            }
+            instagramLink={"https://www.instagram.com/gustavo_pleonasmo/"}
           />
         </div>
       </div>
