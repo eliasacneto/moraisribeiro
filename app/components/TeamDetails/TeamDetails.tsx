@@ -33,7 +33,7 @@ const TeamDetails = ({
               {social.includes("linkedin") && (
                 <div className="flex items-center">
                   <FontAwesomeIcon
-                    className="mr-2"
+                    className="mr-2 cursor-pointer hover:text-[#9f7152] duration-500"
                     icon={faLinkedin}
                     width={25}
                   />
@@ -42,7 +42,7 @@ const TeamDetails = ({
               {social.includes("instagram") && (
                 <div className="flex items-center">
                   <FontAwesomeIcon
-                    className="mr-2"
+                    className="mr-2 cursor-pointer hover:text-[#9f7152] duration-500"
                     icon={faInstagram}
                     width={25}
                   />
