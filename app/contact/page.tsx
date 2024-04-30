@@ -31,11 +31,12 @@ const Contact = () => {
                         text='Rua Antônio Aleixo da Silva, 1880  Jardim Satélite, São José dos Campos - SP CEP 12231-650'
                         image={PinLocation} alt='Pin Location' border="border-[#b8967e42]"
                         rounded="rounded-tr-[3rem] rounded-bl-[3rem]"
+
                     />
                     <CardIcon
                         title='WhatsApp e E-mail'
                         text='(12) 9 9160-4267 moraisribeiroadvjur@gmail.com'
-                        image={PinLocation} alt='Pin Location' border="border-[#b8967e42]"
+                        image={WhatsApp} alt='Pin Location' border="border-[#b8967e42]"
                         rounded="rounded-tr-[3rem] rounded-bl-[3rem]"
                     />
 
