@@ -6,8 +6,6 @@ import Nik from "@/public/images/nik.svg";
 import Joao from "@/public/images/joao.svg";
 import Gust from "@/public/images/gustavo.svg";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; import { fa0 } from '@fortawesome/free-solid-svg-icons/fa0';
-import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Footer from "../components/Footer/Footer";
 
 export const metadata: Metadata = {
@@ -32,6 +30,8 @@ const Team = () => {
             }
             toLink="Redes sociais:"
             social={["linkedin", "instagram"]}
+            linkedinLink={"https://www.linkedin.com/in/nikollymorais/"}
+            instagramLink={"https://www.instagram.com/nikollymoraisadv/"}
           />
           <hr />
           <TeamDetails
@@ -42,6 +42,8 @@ const Team = () => {
             }
             toLink="Redes sociais:"
             social={["linkedin", "instagram"]}
+            linkedinLink={"https://www.linkedin.com/in/joaopedrorrmoliveira/"}
+            instagramLink={"https://www.instagram.com/joaorezenderibeiro/"}
           />
           <hr />
           <TeamDetails
@@ -52,6 +54,10 @@ const Team = () => {
             }
             toLink="Redes sociais:"
             social={["linkedin", "instagram"]}
+            linkedinLink={
+              "https://www.linkedin.com/in/gustavo-santos-ribeiro-31b652196/"
+            }
+            instagramLink={"https://www.instagram.com/gustavo_pleonasmo/"}
           />
         </div>
       </div>
