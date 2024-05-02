@@ -2,14 +2,15 @@ import Image from 'next/image';
 import React from 'react'
 import Button from '../Button/button';
 
-interface Props {
+interface ArticleProps {
   image: string;
   category: string;
   author: string;
   description: string;
+  link: string;
 }
 
-const ArticleView = ({ category, image, author, description }: Props) => {
+const ArticleView = ({ category, image, author, description, link }: ArticleProps) => {
   return (
     <div className='p-[3rem]'>
       <div className='flex flex-col md:flex-row items-center md:space-x-4'>
@@ -21,7 +22,7 @@ const ArticleView = ({ category, image, author, description }: Props) => {
             <h1 className='text-[30px] text-[#21243D]'>{category}</h1>
             <p className='text-[18px] text-[#e07a4e]'>{author}</p>
             <p className='text-[15px] text-[#21243D]'>{description}</p>
-            <Button>Continue Lendo</Button>
+            <Button link={link}>Continue Lendo</Button>
           </div>
         </div>
       </div>
@@ -29,4 +30,6 @@ const ArticleView = ({ category, image, author, description }: Props) => {
   )
 }
 
-export default ArticleView
+export default ArticleView;
+
+
