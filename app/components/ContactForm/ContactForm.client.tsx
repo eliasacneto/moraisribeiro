@@ -36,14 +36,16 @@ const ContactForm = () => {
     });
   };
 
-  const handleInterestChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInterestChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
     setForm({
       ...form,
       interest: event.target.value,
     });
   };
 
-  const handleMetUsChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleMetUsChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setForm({
       ...form,
       metUs: event.target.value,
@@ -79,6 +81,8 @@ const ContactForm = () => {
             { name: "Nome:", value: client_name, inline: true },
             { name: "Email:", value: email, inline: true },
             { name: "WhatsApp:", value: whatsapp, inline: true },
+            { name: "Área de interesse:", value: interest, inline: true },
+            { name: "Como nos conheceu:", value: metUs, inline: true },
             { name: "Mensagem:", value: message },
           ],
           color: 7506394,
@@ -291,6 +295,8 @@ const ContactForm = () => {
           <select
             name="area"
             className="bg-white border text-gray-900 rounded-lg block w-full p-2.5"
+            value={form.interest}
+            onChange={handleInterestChange}
           >
             <option value="">Escolha uma área</option>
             {interests.map((interest, index) => (
@@ -305,6 +311,8 @@ const ContactForm = () => {
           <select
             name="conhecimento"
             className="bg-white border text-gray-900 rounded-lg block w-full p-2.5"
+            value={form.metUs}
+            onChange={handleMetUsChange}
           >
             <option value="" selected>
               Selecione uma opção
