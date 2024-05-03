@@ -241,6 +241,13 @@ const ContactForm = () => {
     },
   ];
 
+  const met = [
+    { value: "Google", label: "Google" },
+    { value: "Instagram", label: "Instagram" },
+    { value: "LinkedIn", label: "LinkedIn" },
+    { value: "Indicação de um amigo", label: "Indicação de um amigo" },
+  ];
+
   return (
     <form className="flex flex-col w-[640px]" onSubmit={handleSubmit}>
       <label>
@@ -297,6 +304,7 @@ const ContactForm = () => {
             className="bg-white border text-gray-900 rounded-lg block w-full p-2.5"
             value={form.interest}
             onChange={handleInterestChange}
+            required
           >
             <option value="">Escolha uma área</option>
             {interests.map((interest, index) => (
@@ -317,10 +325,11 @@ const ContactForm = () => {
             <option value="" selected>
               Selecione uma opção
             </option>
-            <option value="area01">Indicação de um amigo</option>
-            <option value="area02">Google</option>
-            <option value="area03">Instagram</option>
-            <option value="area04">Linkedin</option>
+            {met.map((met, index) => (
+              <option key={index} value={met.value}>
+                {met.label}
+              </option>
+            ))}
           </select>
         </div>
       </div>
