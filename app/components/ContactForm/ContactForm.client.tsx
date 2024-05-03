@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { IMaskInput } from "react-imask";
 import Swal from "sweetalert2";
 
 const ContactForm = () => {
@@ -282,10 +283,10 @@ const ContactForm = () => {
           <label>
             WhatsApp<span className="text-rose-500">*</span>
           </label>
-          <input
-            name="whatsapp"
+          <IMaskInput
             className="border p-2.5 rounded-lg"
-            type="text"
+            name="whatsapp"
+            mask="(00) 0 0000-0000"
             placeholder="(00) 0 0000-0000"
             value={form.whatsapp}
             onChange={handleWhatsAppChange}
