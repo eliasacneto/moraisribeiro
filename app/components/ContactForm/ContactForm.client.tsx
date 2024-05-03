@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { IMaskInput } from "react-imask";
 import Swal from "sweetalert2";
 
 const ContactForm = () => {
@@ -36,14 +37,16 @@ const ContactForm = () => {
     });
   };
 
-  const handleInterestChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInterestChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
     setForm({
       ...form,
       interest: event.target.value,
     });
   };
 
-  const handleMetUsChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleMetUsChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setForm({
       ...form,
       metUs: event.target.value,
@@ -62,10 +65,6 @@ const ContactForm = () => {
   const sendForm = () => {
     const { client_name, email, whatsapp, interest, metUs, message } = form;
 
-    console.log(`Nome: ${client_name}`);
-    console.log(`Email: ${email}`);
-    console.log(`Mensagem: ${message}`);
-
     var webhookUrl =
       "https://discordapp.com/api/webhooks/1235704230703271976/t82KP2nVaMwLXwA2DP35wNrt4yBXCnBE7af27ZUm46b6eJKkmD0jjfTzMgRVlY9bp-UZ";
 
@@ -79,6 +78,8 @@ const ContactForm = () => {
             { name: "Nome:", value: client_name, inline: true },
             { name: "Email:", value: email, inline: true },
             { name: "WhatsApp:", value: whatsapp, inline: true },
+            { name: "Área de interesse:", value: interest },
+            { name: "Como nos conheceu:", value: metUs, inline: true },
             { name: "Mensagem:", value: message },
           ],
           color: 7506394,
@@ -185,7 +186,6 @@ const ContactForm = () => {
   ) => {
     event.preventDefault();
 
-    console.log("Form aqui");
     sendForm();
     Swal.fire({
       title: "Sua mensagem foi enviada!",
@@ -237,6 +237,13 @@ const ContactForm = () => {
     },
   ];
 
+  const met = [
+    { value: "Google", label: "Google" },
+    { value: "Instagram", label: "Instagram" },
+    { value: "LinkedIn", label: "LinkedIn" },
+    { value: "Indicação de um amigo", label: "Indicação de um amigo" },
+  ];
+
   return (
     <form className="flex flex-col w-[640px]" onSubmit={handleSubmit}>
       <label>
@@ -271,10 +278,10 @@ const ContactForm = () => {
           <label>
             WhatsApp<span className="text-rose-500">*</span>
           </label>
-          <input
+          <IMaskInput
+            className="border p-2.5 rounded-lg font-sans"
             name="whatsapp"
-            className="border p-2.5 rounded-lg"
-            type="text"
+            mask="(00) 0 0000-0000"
             placeholder="(00) 0 0000-0000"
             value={form.whatsapp}
             onChange={handleWhatsAppChange}
@@ -291,6 +298,9 @@ const ContactForm = () => {
           <select
             name="area"
             className="bg-white border text-gray-900 rounded-lg block w-full p-2.5"
+            value={form.interest}
+            onChange={handleInterestChange}
+            required
           >
             <option value="">Escolha uma área</option>
             {interests.map((interest, index) => (
@@ -305,14 +315,17 @@ const ContactForm = () => {
           <select
             name="conhecimento"
             className="bg-white border text-gray-900 rounded-lg block w-full p-2.5"
+            value={form.metUs}
+            onChange={handleMetUsChange}
           >
             <option value="" selected>
               Selecione uma opção
             </option>
-            <option value="area01">Indicação de um amigo</option>
-            <option value="area02">Google</option>
-            <option value="area03">Instagram</option>
-            <option value="area04">Linkedin</option>
+            {met.map((met, index) => (
+              <option key={index} value={met.value}>
+                {met.label}
+              </option>
+            ))}
           </select>
         </div>
       </div>
