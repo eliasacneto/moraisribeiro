@@ -65,10 +65,6 @@ const ContactForm = () => {
   const sendForm = () => {
     const { client_name, email, whatsapp, interest, metUs, message } = form;
 
-    console.log(`Nome: ${client_name}`);
-    console.log(`Email: ${email}`);
-    console.log(`Mensagem: ${message}`);
-
     var webhookUrl =
       "https://discordapp.com/api/webhooks/1235704230703271976/t82KP2nVaMwLXwA2DP35wNrt4yBXCnBE7af27ZUm46b6eJKkmD0jjfTzMgRVlY9bp-UZ";
 
@@ -82,7 +78,7 @@ const ContactForm = () => {
             { name: "Nome:", value: client_name, inline: true },
             { name: "Email:", value: email, inline: true },
             { name: "WhatsApp:", value: whatsapp, inline: true },
-            { name: "Área de interesse:", value: interest, inline: true },
+            { name: "Área de interesse:", value: interest },
             { name: "Como nos conheceu:", value: metUs, inline: true },
             { name: "Mensagem:", value: message },
           ],
@@ -190,7 +186,6 @@ const ContactForm = () => {
   ) => {
     event.preventDefault();
 
-    console.log("Form aqui");
     sendForm();
     Swal.fire({
       title: "Sua mensagem foi enviada!",
@@ -284,7 +279,7 @@ const ContactForm = () => {
             WhatsApp<span className="text-rose-500">*</span>
           </label>
           <IMaskInput
-            className="border p-2.5 rounded-lg"
+            className="border p-2.5 rounded-lg font-sans"
             name="whatsapp"
             mask="(00) 0 0000-0000"
             placeholder="(00) 0 0000-0000"
