@@ -27,7 +27,7 @@ const ScrollToTopButton = () => {
   return (
     <button
       id="scrollToTopButton"
-      className="bg-[#B8967E] hover:bg-[#c47642] w-12 h-12 rounded-full flex items-center justify-center ml-64 mt-10 duration-500 hover:duration-500"
+      className="bg-[#d68e5d] hover:bg-[#c47642] w-12 h-12 rounded-full flex items-center justify-center ml-80 md:ml-64 mt-10 duration-500 hover:duration-500"
     >
       <Image src={arrowUp} alt="Seta para cima" />
     </button>

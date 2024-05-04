@@ -11,9 +11,13 @@ const Nav = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="fixed top-0 left-0 right-0 z-50  bg-slate-950 ">
-      <div className="w-full bg-slate-950  border-b border-[#B8967E] ">
+      <div className="w-full bg-slate-950  shadow shadow-[#B8967E] ">
         <div className="w-[90%] md:w-[80%] h-[100%] mx-auto flex items-center justify-between">
           <nav className="flex flex-wrap items-center justify-between w-full py-4  md:py-0 px-4 text-lg text-gray-700 bg-slate-950 md:h-[10vh]">
             <div>
@@ -48,42 +52,49 @@ const Nav = () => {
               id="menu"
             >
               <ul className="pt-4 text-base bg-slate-950 w-full text-white md:flex md:justify-between md:pt-2">
-                <li className="text-zinc-300  md:p-4 py-2 block">
+                <li className="text-zinc-300 mt-2 md:p-4 py-2 block md:mt-0">
                   <Link
                     href="/"
-                    className="hover:text-[#cca185] transition duration-500 hover:duration-500"
+                    className="hover:text-[#cca185] font-bold  transition duration-500 hover:duration-500"
+                    onClick={closeMenu}
                   >
                     Início
                   </Link>
                 </li>
-                <li className="text-zinc-300 md:p-4 py-2 block">
+                <li className="text-zinc-300 mt-2 md:p-4 py-2 block md:mt-0">
                   <Link
-                    href="#areas"
-                    className="hover:text-[#cca185] transition duration-500 hover:duration-500"
+                    href="/areas"
+                    onClick={(e) => {
+                      closeMenu();
+                    }}
+                    className="hover:text-[#cca185] font-bold  transition duration-500 hover:duration-500"
                   >
                     Áreas de atuação
                   </Link>
                 </li>
-                <li className="text-zinc-300 md:p-4 py-2 block">
+                <li className="text-zinc-300 mt-2 md:p-4 py-2 block md:mt-0">
                   <Link
                     href="/team"
-                    className="hover:text-[#cca185] transition duration-500 hover:duration-500"
+                    className="hover:text-[#cca185] font-bold  transition duration-500 hover:duration-500"
+                    onClick={closeMenu}
                   >
                     Profissionais
                   </Link>
                 </li>
-                <li className="text-zinc-300 md:p-4 py-2 block">
+                <li className="text-zinc-300 mt-2 md:p-4 py-2 block md:mt-0">
                   <Link
                     href="/about-us"
-                    className="hover:text-[#cca185] transition duration-500 hover:duration-500"
+                    className="hover:text-[#cca185] font-bold transition duration-500 hover:duration-500"
+                    onClick={closeMenu}
                   >
                     Sobre nós
                   </Link>
                 </li>
-                <li className="text-zinc-300 md:p-4 py-2 block">
+                <li className="text-zinc-300 mt-5 mb-3 md:p-4 py-2 block md:mt-0">
                   <Link
                     href="/contact"
-                    className="bg-[#d68e5d] text-white py-3 px-10 rounded-tl-[15px] rounded-br-[15px] hover:bg-[#c47642] text-bold transition duration-500 hover:duration-500"
+                    className="bg-[#c47642] font-bold text-white py-3 px-10 rounded-tl-[1rem] rounded-br-[1rem] hover:bg-[#d68e5d] text-bold transition duration-500 hover:duration-500"
+                    onClick={closeMenu}
                   >
                     Contato
                   </Link>
