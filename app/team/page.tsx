@@ -20,7 +20,7 @@ const Team = () => {
         title="Nossos Profissionais"
         subtitle="Acreditamos no poder da nossa equipe e sabemos que nada se constrói sozinho."
       />
-      <div className="pt-[9.5rem] pb-[9.5rem]">
+      <div className="pt-[5rem] pb-[5rem]">
         <div className="w-[80%] mx-auto mt-[1rem] flex flex-col">
           <TeamDetails
             image={Nik}
