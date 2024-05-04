@@ -38,8 +38,8 @@ const Occupation = () => {
               enfrentar desafios complexos em um ambiente empresarial em
               constante mudança.
             </p>
-            <Link className="" href={"/contact"}>
-              <Button>Entre em contato</Button>
+            <Link className="" href={"/areas"}>
+              <Button>Conheça nossas áreas de atuação</Button>
             </Link>
           </div>
         </div>

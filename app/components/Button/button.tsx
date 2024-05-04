@@ -11,14 +11,14 @@ const Button: React.FC<ButtonProps> = ({ children, link }) => {
       <a
         href={link}
         target="_blank"
-        className="bg-[#C98264] inline-block hover:bg-[#c47642] font-bold transition duration-500 mt-5 rounded-tr-[10px] rounded-bl-[10px] text-white py-3 px-8"
+        className="bg-[#c47642] inline-block hover:bg-[#d68e5d] font-bold transition duration-500 mt-5 rounded-tr-[10px] rounded-bl-[10px] text-white py-3 px-8"
       >
         {children}
       </a>
     );
   } else {
     return (
-      <button className="bg-[#C98264] inline-block hover:bg-[#c47642] font-bold mt-5 rounded-tr-[10px] rounded-bl-[10px] text-white py-3 px-8 duration-500 hover:duration-500">
+      <button className="bg-[#c47642] inline-block hover:bg-[#d68e5d] font-bold mt-5 rounded-tr-[1rem] rounded-bl-[1rem] text-white py-3 px-8 duration-500 hover:duration-500">
         {children}
       </button>
     );
