@@ -58,7 +58,7 @@ const Nav = () => {
                 </li>
                 <li className="text-zinc-300 md:p-4 py-2 block">
                   <Link
-                    href="/areas"
+                    href="#areas"
                     className="hover:text-[#cca185] transition duration-500 hover:duration-500"
                   >
                     Áreas de atuação
@@ -69,7 +69,7 @@ const Nav = () => {
                     href="/team"
                     className="hover:text-[#cca185] transition duration-500 hover:duration-500"
                   >
-                    Profisisonais
+                    Profissionais
                   </Link>
                 </li>
                 <li className="text-zinc-300 md:p-4 py-2 block">

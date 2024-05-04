@@ -24,7 +24,7 @@ const Footer = () => {
             <li className="text-zinc-300">
               <Link
                 className="hover:text-[#cca185] transition duration-500 hover:duration-500"
-                href={""}
+                href={"/"}
               >
                 Voltar para o início
               </Link>
@@ -32,7 +32,7 @@ const Footer = () => {
             <li className="text-zinc-300">
               <Link
                 className="hover:text-[#cca185] transition duration-500 hover:duration-500"
-                href={""}
+                href={"/#areas"}
               >
                 Nossas áreas de atuação
               </Link>
