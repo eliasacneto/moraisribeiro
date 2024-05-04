@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Logo from "@/public/images/mr-logo.jpg";
+import Logo from "@/public/images/mr-logo-removebg.png";
 import Link from "next/link";
 import Image from "next/image";
 

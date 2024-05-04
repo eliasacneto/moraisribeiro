@@ -11,7 +11,7 @@ interface Props {
 
 const Cards = ({ titleCard, textCard }: Props) => {
   return (
-    <div className="p-7 border-2 text-center border-[#B8967E]/15 bg-white rounded-tr-[3rem] rounded-bl-[3rem] hover:border-2 hover:border-[#B8967E] hover:scale-105 hover:shadow-sm transition-all duration-500 md:min-h-64">
+    <div className="p-7 border-2 text-center border-[#B8967E]/15 bg-white rounded-tr-[3rem] rounded-bl-[3rem] hover:border-2 hover:border-[#B8967E] hover:shadow-sm transition-all duration-500 md:min-h-64">
       <div className="flex flex-col items-center">
         <Image src={LawIcon} alt="icone de martelo" className="mb-3" />
         <h1 className="mb-3 text-[#192432] text-[20px]">{titleCard}</h1>
