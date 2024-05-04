@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Logo from "@/public/images/lawlogo.svg";
+import Logo from "@/public/images/mr-logo.jpg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -21,8 +21,6 @@ const Nav = () => {
                 <Image
                   src={Logo}
                   alt="Logo"
-                  width={250}
-                  height={100}
                   className="w-[100%] h-[100%] md:pl-8"
                 />
               </Link>
@@ -60,7 +58,7 @@ const Nav = () => {
                 </li>
                 <li className="text-zinc-300 md:p-4 py-2 block">
                   <Link
-                    href="/areas"
+                    href="#areas"
                     className="hover:text-[#cca185] transition duration-500 hover:duration-500"
                   >
                     Áreas de atuação
@@ -71,7 +69,7 @@ const Nav = () => {
                     href="/team"
                     className="hover:text-[#cca185] transition duration-500 hover:duration-500"
                   >
-                    Profisisonais
+                    Profissionais
                   </Link>
                 </li>
                 <li className="text-zinc-300 md:p-4 py-2 block">
