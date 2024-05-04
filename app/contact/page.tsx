@@ -27,11 +27,11 @@ const Contact = () => {
         subtitle="Preencha o formulário abaixo"
       />
 
-      <div className="flex flex-row justify-evenly items-center  my-8">
-        <div className="flex w-2/5 gap-10">
+      <div className="flex flex-col lg:flex-row justify-evenly items-center my-8 ">
+        <div className="flex flex-col items-center md:flex-row w-full lg:w-2/5 gap-5 md:gap-10 px-4 py-2 order-2 lg:order-1">
           <CardIcon
             title="Localização"
-            text="Rua Antônio Aleixo da Silva, 1880  Jardim Satélite, São José dos Campos - SP CEP 12231-650"
+            text="Rua Antônio Aleixo da Silva, 1880 Jardim Satélite, São José dos Campos - SP CEP 12231-650"
             image={PinLocation}
             alt="Pin Location"
             border="border-[#b8967e42]"
@@ -41,15 +41,15 @@ const Contact = () => {
             title="WhatsApp e E-mail"
             text="(12) 9 9160-4267 moraisribeiroadvjur@gmail.com"
             image={WhatsApp}
-            alt="Pin Location"
+            alt="WhatsApp Icon"
             border="border-[#b8967e42]"
             rounded="rounded-tr-[3rem] rounded-bl-[3rem]"
           />
         </div>
 
-        <div className="bg-gray-50 p-10  rounded-3xl">
-          <h1 className="text-3xl">Entre em contato</h1>
-          <p className=" mt-3 mb-9">
+        <div className="bg-gray-50 p-8 order-1 lg:order-2">
+          <h1 className="text-xl font-[600] md:text-3xl">Entre em contato</h1>
+          <p className="mt-3 mb-3 text-gray-500">
             <span className="text-rose-500">*</span>Campos obrigatórios
           </p>
           <ContactForm />

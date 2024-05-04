@@ -245,10 +245,7 @@ const ContactForm = () => {
   ];
 
   return (
-    <form
-      className="flex flex-col w-full max-w-lg mx-auto p-4"
-      onSubmit={handleSubmit}
-    >
+    <form className="flex flex-col w-[640px]" onSubmit={handleSubmit}>
       <label>
         Nome completo<span className="text-rose-500">*</span>
       </label>
@@ -262,7 +259,7 @@ const ContactForm = () => {
         required
       />
 
-      <div className="flex flex-col sm:flex-row justify-between gap-4 mt-3">
+      <div className="flex flex-row justify-between gap-4 mt-3">
         <div className="flex flex-col rounded w-full">
           <label>
             Email<span className="text-rose-500">*</span>
@@ -282,7 +279,7 @@ const ContactForm = () => {
             WhatsApp<span className="text-rose-500">*</span>
           </label>
           <IMaskInput
-            className="border p-2.5 rounded-lg font-sans w-full"
+            className="border p-2.5 rounded-lg font-sans"
             name="whatsapp"
             mask="(00) 0 0000-0000"
             placeholder="(00) 0 0000-0000"
@@ -293,7 +290,7 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row justify-between gap-4 mt-3">
+      <div className="flex flex-row justify-between gap-4 mt-3">
         <div className="flex flex-col rounded w-full">
           <label>
             Área de interesse<span className="text-rose-500">*</span>
@@ -348,7 +345,7 @@ const ContactForm = () => {
 
       <div className="flex justify-end mt-8">
         <button
-          className="bg-[#d68e5d] text-white font-bold py-3 px-10 rounded-tl-[15px] rounded-br-[15px] hover:bg-[#c47642] transition duration-500"
+          className="bg-[#d68e5d] text-white font-bold py-3 px-10 rounded-tl-[15px] rounded-br-[15px] px-10 py-3 hover:bg-[#c47642] text-bold transition duration-500 hover:duration-500"
           type="submit"
         >
           Enviar mensagem
