@@ -11,7 +11,7 @@ import ScrollToTopButton from "../ScrollToTopButton/ScrollToTopButton";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col sm:flex-row w-full justify-around bg-slate-950 px-4 sm:px-16 py-12">
+    <div className="flex flex-col sm:flex-row w-full justify-around bg-zinc-950 px-4 sm:px-16 py-12">
       <div className="w-4/5 mb-10 md:w-64">
         <Image src={LogoFull} alt="logo" width={200} />
       </div>

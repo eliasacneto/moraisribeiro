@@ -40,26 +40,38 @@ const TeamDetails: React.FC<TeamDetailsProps> = ({
   instagramLink,
 }) => {
   return (
-    <div className="p-[3rem]">
+    <div className="md:p-[3rem]">
       <div className="flex flex-col md:flex-row items-center md:space-x-4">
         <div className="md:w-1/1">
-          <Image src={image} alt={name} />
+          <Image
+            src={image}
+            alt={name}
+            className="hover:scale-105 hover:shadow-sm transition-all duration-500 "
+          />
         </div>
         <div className="md:w-[80%] md:pl-8">
           <div className="space-y-2 text-center md:text-left">
-            <h1 className="text-[30px] text-[#21243D]">{name}</h1>
-            <p className="text-[15px] text-justify text-[#8B94A1]">
+            <h1 className="mt-5 text-[30px] text-[#21243D]">{name}</h1>
+            <p className="text-[17px] text-justify text-[#8B94A1]">
               {mainDescription}
             </p>
-            <p className="text-[15px] text-black">{toLink}</p>
-            <div className="flex justify-center md:justify-start items-center text-[#CC926A] gap-[0.6rem]">
+            <p className="text-[18px] text-black">{toLink}</p>
+            <div className="flex justify-center pb-10 md:justify-start items-center text-[#CC926A] gap-[0.6rem] ">
               {social.includes("linkedin") && (
-                <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={linkedinLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SocialIcon icon={faLinkedin} />
                 </a>
               )}
               {social.includes("instagram") && (
-                <a href={instagramLink} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={instagramLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SocialIcon icon={faInstagram} />
                 </a>
               )}

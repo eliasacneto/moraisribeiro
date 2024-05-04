@@ -4,10 +4,10 @@ import Cards from "../components/Cards/Cards";
 
 const OccupationArea = () => {
   return (
-    <div id="areas" className="pt-[5rem] pb-[5rem] bg-gray-100">
-      <Heading mainHeading="Conheça as nossas" subHeading="Áreas de Atuação" />
+    <div className="pt-[5rem] pb-[5rem] bg-gray-100">
+      {/* <Heading mainHeading="Conheça as nossas" subHeading="Áreas de Atuação" /> */}
 
-      <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[4rem] gap-[3rem] items-center">
+      <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[3rem] gap-[3rem] items-center">
         <Cards
           titleCard="Direito Civil Geral"
           textCard="É o ramo do direito que regula as relações pessoais e patrimoniais entre indivíduos em sociedade, abrangendo aspectos como contratos, propriedade, família e obrigações."
