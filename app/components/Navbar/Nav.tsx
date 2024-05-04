@@ -11,13 +11,16 @@ const Nav = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   const handleSmoothScroll = (
     e: React.MouseEvent<HTMLAnchorElement>,
     target: string
   ) => {
     e.preventDefault();
-    const section = document.querySelector(target) as HTMLElement | null; // Cast como HTMLElement
+    const section = document.querySelector(target) as HTMLElement | null;
 
     if (section) {
       window.scrollTo({
@@ -63,43 +66,50 @@ const Nav = () => {
               id="menu"
             >
               <ul className="pt-4 text-base bg-slate-950 w-full text-white md:flex md:justify-between md:pt-2">
-                <li className="text-zinc-300  md:p-4 py-2 block">
+                <li className="text-zinc-300 mt-2 md:p-4 py-2 block md:mt-0">
                   <Link
                     href="/"
                     className="hover:text-[#cca185] transition duration-500 hover:duration-500"
+                    onClick={closeMenu}
                   >
                     Início
                   </Link>
                 </li>
-                <li className="text-zinc-300 md:p-4 py-2 block">
+                <li className="text-zinc-300 mt-2 md:p-4 py-2 block md:mt-0">
                   <Link
-                    href="#areas"
-                    onClick={(e) => handleSmoothScroll(e, "#areas")}
+                    href="/#areas"
+                    onClick={(e) => {
+                      closeMenu();
+                      handleSmoothScroll(e, "#areas");
+                    }}
                     className="hover:text-[#cca185] transition duration-500 hover:duration-500"
                   >
                     Áreas de atuação
                   </Link>
                 </li>
-                <li className="text-zinc-300 md:p-4 py-2 block">
+                <li className="text-zinc-300 mt-2 md:p-4 py-2 block md:mt-0">
                   <Link
                     href="/team"
                     className="hover:text-[#cca185] transition duration-500 hover:duration-500"
+                    onClick={closeMenu}
                   >
                     Profissionais
                   </Link>
                 </li>
-                <li className="text-zinc-300 md:p-4 py-2 block">
+                <li className="text-zinc-300 mt-2 md:p-4 py-2 block md:mt-0">
                   <Link
                     href="/about-us"
                     className="hover:text-[#cca185] transition duration-500 hover:duration-500"
+                    onClick={closeMenu}
                   >
                     Sobre nós
                   </Link>
                 </li>
-                <li className="text-zinc-300 md:p-4 py-2 block">
+                <li className="text-zinc-300 mt-5 mb-3 md:p-4 py-2 block md:mt-0">
                   <Link
                     href="/contact"
                     className="bg-[#d68e5d] text-white py-3 px-10 rounded-tl-[15px] rounded-br-[15px] hover:bg-[#c47642] text-bold transition duration-500 hover:duration-500"
+                    onClick={closeMenu}
                   >
                     Contato
                   </Link>
