@@ -19,13 +19,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const isLoading = false; // Defina sua lógica aqui
+  const isLoading = false;
 
   if (isLoading) {
     return <Loading />;
   }
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={font.className}>
         <Nav />
 

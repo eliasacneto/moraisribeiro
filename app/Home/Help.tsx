@@ -11,10 +11,10 @@ const Help = () => {
           <Image src={helpImg} alt="imagem" />
         </div>
         <div className="md:w-1/2 md:pr-6 mb-8 md:mb-0">
-          <h1 className="text-[40px] text-center md:text-left text-white mb-3">
+          <h1 className="text-2xl mt-3 leading-snug md:text-[34px] text-center md:text-center text-white mb-1">
             Está buscando ajuda de um advogado?
           </h1>
-          <div className="flex justify-center md:justify-start items-center">
+          <div className="flex justify-center md:justify-center items-center">
             <Button>Fale conosco agora</Button>
           </div>
         </div>
