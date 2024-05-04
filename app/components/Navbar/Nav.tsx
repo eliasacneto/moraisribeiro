@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Logo from "@/public/images/lawlogo.svg";
+import Logo from "@/public/images/mr-logo.jpg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -21,8 +21,6 @@ const Nav = () => {
                 <Image
                   src={Logo}
                   alt="Logo"
-                  width={250}
-                  height={100}
                   className="w-[100%] h-[100%] md:pl-8"
                 />
               </Link>
