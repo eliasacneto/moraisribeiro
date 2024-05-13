@@ -20,7 +20,7 @@ const AboutUs = () => {
         <div>
             <SectionTitle title='Sobre nós' subtitle='Uma história de sucesso e confiança' />
             <div className="flex justify-center">
-                <div className="mt-20 sm:my-24 mb-20 px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="mt-20 sm:my-24 mb-20 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <CardIcon 
                         image={targetIcon} 
                         alt={"Ícone de alvo"}
@@ -47,7 +47,7 @@ const AboutUs = () => {
                     />
                 </div>
             </div>
-            <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 mb-16 sm:mb-32">
+            <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 mb-16 sm:mb-32 md:px-48">
                 <div className="md:w-full mb-8 md:mb-0">
                     <Image 
                         src={aboutUsPhoto} 
@@ -57,7 +57,7 @@ const AboutUs = () => {
                         height={400} // Define um tamanho fixo para a imagem em telas pequenas
                     />
                 </div>
-                <div className="md:w-full md:pr-4 md:pl-4">
+                <div className="md:w-full md:px-4">
                     <p className="text-sm mb-4 text-[#C98264] text-center md:text-left">
                         EXPERIÊNCIA E QUALIFICAÇÃO
                     </p>
