@@ -8,7 +8,7 @@
 
 <p style="text-align:center">
   
-  <img src="http://img.shields.io/static/v1?label=STATUS%20DO%20PROJETO:&message=CONCLUÍDO&color=GREEN&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=STATUS%20DO%20PROJETO:&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
 ## 👨🏻‍💻 Sobre
