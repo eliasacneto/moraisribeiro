@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const Occupation = () => {
   return (
-    <div className="pt-10 pb-6 md:pt-20 md:pb-12">
+    <div className="container pt mx-auto flex flex-col md:flex-row items-center justify-between my-16 sm:mb-32 md:px-48">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between px-6">
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <div className="max-w-xs md:max-w-none mx-auto md:mx-0">
+            <div className="md:w-full mb-8 md:mb-0">
               <Image src={OccupationImg} alt="imagem" width={400} height={400} />
             </div>
           </div>

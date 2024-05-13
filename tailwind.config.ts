@@ -8,9 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'es': '1100px',
+      },
       backgroundImage: {
         'hero': "url('../public/images/lawhero.svg')",
-      }
+      },
+      backgroundPosition: {
+        '85%': '85%',
+      },
     },
   },
   plugins: [],
