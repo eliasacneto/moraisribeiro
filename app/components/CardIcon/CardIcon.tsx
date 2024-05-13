@@ -18,8 +18,8 @@ const CardIcon = ({ image, alt, title, text, border, rounded }: CardProps) => {
       <Image
         src={image}
         alt={alt}
-        width={100}
-        height={100}
+        width={85}
+        height={85}
         className={"mt-8"}
       />
       <p className="text-[#192432] text-center text-xl leading-normal mt-5">

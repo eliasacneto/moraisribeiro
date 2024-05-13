@@ -17,7 +17,7 @@ const Articles = () => {
           description="A decisão entre trabalhar como Pessoa Jurídica (PJ) ou sob a forma da Consolidação das Leis do Trabalho (CLT) é crucial e deve ser cuidadosamente ponderada, levando em consideração diversos aspectos. O regime CLT oferece uma gama de benefícios e proteções para os trabalhadores, como férias remuneradas, décimo terceiro salário..."
           link="https://www.linkedin.com/pulse/pj-ou-clt-avaliando-vantagens-e-desvantagens-jo%25C3%25A3o-pedro-x2aef"
         />
-        <hr />
+        <hr className="mt-4 md:mt-0" />
         <ArticleView
           image={Art2}
           category="Exposição de Dados na Dark Web e suas Consequências Jurídicas: Um Alerta para a Segurança Digital"
