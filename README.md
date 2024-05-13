@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img alt="WeFashion-banner" src="./public/banner.jpg" width="100%">
+</p>
 
-## Getting Started
+<h1 align="center">
+  Projeto: Morais & Ribeiro
+</h1>
 
-First, run the development server:
+<p style="text-align:center">
+  
+  <img src="http://img.shields.io/static/v1?label=STATUS%20DO%20PROJETO:&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+</p>
+
+## 👨🏻‍💻 Sobre
+
+Este repositório contém o código-fonte e os recursos relacionados ao desenvolvimento do website estático para o escritório de advocacia Morais & Ribeiro Advocacia. O projeto foi desenvolvido pelos alunos do curso TECH da [Escola DNC](https://www.escoladnc.com.br/).
+
+O website foi criado com o objetivo de fornecer uma presença online para o escritório, apresentando informações sobre seus serviços, profissionais, áreas de atuação e meios de contato.
+
+### Tecnologias utilizadas
+
+- Next.js: Framework React para renderização do lado do servidor e roteamento.
+- TypeScript: Linguagem de programação para adicionar tipagem estática ao código.
+- TailwindCSS: Framework de CSS para estilização rápida e responsiva.
+- Discord: Plataforma de comunicação utilizada para integração do formulário de contato.
+
+## 💻 Funcionalidades
+
+- Integração com o Google Maps de endereço;
+- Integração com o Discord para captação de leads;
+- Integração com o Linkedin para exibição de postagens;
+- Responsividade para dispositivos móveis;
+
+## 🖥️ Demo da aplicação:
+
+> Você pode estar acessando o projeto clicando neste [link](https://moraisribeiro.vercel.app) ou digitando no navegador: https://moraisribeiro.vercel.app
+
+## ⚙️ Como executar a aplicação:
+
+Você precisará ter instalado o [Node.js](https://nodejs.org/en) para utilizar comandos npm e o [Git](https://git-scm.com/) instalado na sua máquina.
+
+Clone o projeto:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/eliasacneto/moraisribeiro
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navegue até o diretório do projeto:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd moraisribeiro
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Instale as dependências:
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Inicie o servidor:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## :octocat: Contribuidores:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<a title="Elias Neto" href="https://github.com/eliasacneto">
+  <img src="https://avatars.githubusercontent.com/u/8580665?v=4" width="100" style="border-radius:50%">
+</a>
+<a title="Rodrigo Brandão" href="https://github.com/rodrigmeira">
+  <img src="https://avatars.githubusercontent.com/u/114089132?v=4" width="100" style="border-radius:50%">
+</a>
+<a title="Murillo Couto" href="https://github.com/MurilloCouto">
+  <img src="https://avatars.githubusercontent.com/u/123082600?v=4" width="100" style="border-radius:50%">
+</a>
