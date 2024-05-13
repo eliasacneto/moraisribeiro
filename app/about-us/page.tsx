@@ -47,14 +47,14 @@ const AboutUs = () => {
                     />
                 </div>
             </div>
-            <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 mb-16 sm:mb-32 md:px-48">
+            <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 mb-16 sm:mb-32 md:px-42">
                 <div className="md:w-full mb-8 md:mb-0">
                     <Image 
                         src={aboutUsPhoto} 
                         alt={"Doutor João Pedro, Doutora Nikolly Morais e Doutor Gustavo Santos"}
                         className='md:mx-auto md:ml-0'
-                        width={500} // Define um tamanho fixo para a imagem em telas pequenas
-                        height={400} // Define um tamanho fixo para a imagem em telas pequenas
+                        width={500} 
+                        height={400}
                     />
                 </div>
                 <div className="md:w-full md:px-4">
