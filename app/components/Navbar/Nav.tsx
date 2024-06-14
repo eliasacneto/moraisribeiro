@@ -25,10 +25,11 @@ const Nav = () => {
                 <Image
                   src={Logo}
                   alt="Logo"
-                  width={200}
-                  height={50}
-                  quality={100}
-                  className=" w-full md:pl-6"
+                  width={0}
+                  height={0}
+                  quality={0}
+                  sizes="100vh"
+                  className=" w-full h-12 md:pl-6"
                 />
               </Link>
             </div>
@@ -51,7 +52,7 @@ const Nav = () => {
             <div
               className={`${
                 isMenuOpen ? "block" : "hidden"
-              } w-full  es:flex es:items-center es:w-auto`}
+              } w-full es:flex es:items-center es:w-auto`}
               id="menu"
             >
               <ul className="text-base bg-slate-950 w-full text-white es:flex md:justify-between md:pt-2">
