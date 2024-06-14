@@ -1,5 +1,10 @@
 import { IconDefinition } from "@fortawesome/fontawesome-common-types";
-import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faInstagram,
+  faLinkedin,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import React from "react";
@@ -7,11 +12,14 @@ import React from "react";
 interface TeamDetailsProps {
   image: string;
   name: string;
+  role: string;
   mainDescription: string;
   toLink: string;
   social: string[];
   linkedinLink: string;
   instagramLink: string;
+  whatsappLink: string;
+  emailLink: string;
 }
 
 interface SocialIconProps {
@@ -33,11 +41,14 @@ const SocialIcon: React.FC<SocialIconProps> = ({ icon }) => {
 const TeamDetails: React.FC<TeamDetailsProps> = ({
   image,
   name,
+  role,
   mainDescription,
   toLink,
   social,
   linkedinLink,
   instagramLink,
+  whatsappLink,
+  emailLink,
 }) => {
   return (
     <div className="md:p-[3rem]">
@@ -52,6 +63,7 @@ const TeamDetails: React.FC<TeamDetailsProps> = ({
         <div className="md:w-[80%] md:pl-8">
           <div className="space-y-2 text-center md:text-left">
             <h1 className="mt-5 text-[30px] text-[#21243D]">{name}</h1>
+            <h3 className="text-xl">{role}</h3>
             <p className="text-[17px] text-justify text-[#8B94A1]">
               {mainDescription}
             </p>
@@ -73,6 +85,24 @@ const TeamDetails: React.FC<TeamDetailsProps> = ({
                   rel="noopener noreferrer"
                 >
                   <SocialIcon icon={faInstagram} />
+                </a>
+              )}
+              {social.includes("whatsapp") && (
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SocialIcon icon={faWhatsapp} />
+                </a>
+              )}
+              {social.includes("email") && (
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SocialIcon icon={faEnvelope} />
                 </a>
               )}
             </div>

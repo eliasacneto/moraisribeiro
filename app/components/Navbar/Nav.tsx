@@ -17,7 +17,7 @@ const Nav = () => {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50  bg-slate-950 ">
-      <div className="w-full bg-slate-950  shadow shadow-[#B8967E] ">
+      <div className="w-full bg-slate-950  shadow shadow-zinc-400 ">
         <div className="w-[90%] md:w-[80%] h-[100%] mx-auto flex items-center justify-between">
           <nav className="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-slate-950 es:h-[10vh]">
             <div>
@@ -25,7 +25,8 @@ const Nav = () => {
                 <Image
                   src={Logo}
                   alt="Logo"
-                  className="w-[100%] h-[100%] md:pl-8"
+                  quality={100}
+                  className=" w-full h-full md:pl-8"
                 />
               </Link>
             </div>
