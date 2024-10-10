@@ -3,74 +3,66 @@
 </p>
 
 <h1 align="center">
-  Projeto: Morais & Ribeiro
+  Morais & Ribeiro Law Firm
 </h1>
 
 <p style="text-align:center">
   
-  <img src="http://img.shields.io/static/v1?label=STATUS%20DO%20PROJETO:&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=PROJECT%20STATUS:&message=DONE&color=GREEN&style=for-the-badge"/>
 </p>
 
-## 👨🏻‍💻 Sobre
+## 👨🏻‍💻 About
 
-Este repositório contém o código-fonte e os recursos relacionados ao desenvolvimento do website estático para o escritório de advocacia Morais & Ribeiro Advocacia. O projeto foi desenvolvido pelos alunos do curso TECH da [Escola DNC](https://www.escoladnc.com.br/).
+This repository contains the source code and resources related to the development of the static website for the law firm Morais & Ribeiro.
 
-O website foi criado com o objetivo de fornecer uma presença online para o escritório, apresentando informações sobre seus serviços, profissionais, áreas de atuação e meios de contato.
+The website was created with the aim of providing an online presence for the firm, presenting information about its services, professionals, areas of activity and means of contact.
 
-### Tecnologias utilizadas
+### Technologies used
 
-- Next.js: Framework React para renderização do lado do servidor e roteamento.
-- TypeScript: Linguagem de programação para adicionar tipagem estática ao código.
-- TailwindCSS: Framework de CSS para estilização rápida e responsiva.
-- Discord: Plataforma de comunicação utilizada para integração do formulário de contato.
+- Next.js: React framework for server-side rendering and routing.
+- TypeScript: Programming language for adding static typing to code.
+- TailwindCSS: CSS framework for fast and responsive styling.
+- Discord: Communication platform used for contact form integration.
 
-## 💻 Funcionalidades
+## ✨ Key Features
 
-- Integração com o Google Maps de endereço;
-- Integração com o Discord para captação de leads;
-- Integração com o Linkedin para exibição de postagens;
-- Responsividade para dispositivos móveis;
+- Integration with Google Maps for address;
+- Integration with Discord for lead capture;
+- Integration with Linkedin for displaying posts;
+- Responsiveness for mobile devices;
 
-## 🖥️ Demo da aplicação:
+## 🖥️ Demo:
 
-> Você pode estar acessando o projeto clicando neste [link](https://moraisribeiro.vercel.app) ou digitando no navegador: https://moraisribeiro.vercel.app
+> You can access the project by clicking on this [link](https://moraisribeiro.vercel.app) or typing in the browser: https://moraisribeiro.vercel.app
 
-## ⚙️ Como executar a aplicação:
+### ⚙️ Como executar a aplicação:
 
-Você precisará ter instalado o [Node.js](https://nodejs.org/en) para utilizar comandos npm e o [Git](https://git-scm.com/) instalado na sua máquina.
+If you'd like to run locally or contribute to the project, follow these steps:
 
-Clone o projeto:
+## 🛠️ Installation (for Developers)
+
+Clone the repository:
 
 ```bash
-  git clone https://github.com/eliasacneto/moraisribeiro
+  git clone https://github.com/eliasacneto/moraisribeiro.git
 ```
 
-Navegue até o diretório do projeto:
+Navigate to directory::
 
 ```bash
   cd moraisribeiro
 ```
 
-Instale as dependências:
+ Install dependencies:
 
 ```bash
   npm install
 ```
 
-Inicie o servidor:
+Run the server::
 
 ```bash
   npm run dev
 ```
 
-## :octocat: Contribuidores:
 
-<a title="Elias Neto" href="https://github.com/eliasacneto">
-  <img src="https://avatars.githubusercontent.com/u/8580665?v=4" width="100" style="border-radius:50%">
-</a>
-<a title="Rodrigo Brandão" href="https://github.com/rodrigmeira">
-  <img src="https://avatars.githubusercontent.com/u/114089132?v=4" width="100" style="border-radius:50%">
-</a>
-<a title="Murillo Couto" href="https://github.com/MurilloCouto">
-  <img src="https://avatars.githubusercontent.com/u/123082600?v=4" width="100" style="border-radius:50%">
-</a>
